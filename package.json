@@ -1,0 +1,30 @@
+{
+  "name": "pretty-css-stuff",
+  "version": "0.0.1",
+  "description": "collection of CSS button widgets",
+  "scripts": {
+    "less": "lessc src/button.less dist/cosbuttons-full.css",
+    "minify": "postcss dist/cosbuttons-full.css > dist/cosbuttons-min.css",
+    "build": "npm run less && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleoold/Pretty-CSS-Stuff.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "cleoold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cleoold/Pretty-CSS-Stuff/issues"
+  },
+  "homepage": "https://github.com/cleoold/Pretty-CSS-Stuff#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "lessc": "^1.0.2",
+    "postcss-cli": "^7.1.0",
+    "tslib": "^1.10.0"
+  }
+}

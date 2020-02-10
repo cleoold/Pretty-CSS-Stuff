@@ -1,0 +1,62 @@
+body, html {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+span, p, div, a, h1, h2, h3, h4, h5, h6, button, input {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+h1 {
+    margin: 3rem .2rem;
+}
+
+a:visited {
+    color: inherit;
+}
+
+header, footer, .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding: 6rem 0;
+}
+
+.container:first-of-type {
+    height: 27rem;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,126,253,1) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+}
+@media (max-width:480px) {
+    .container:first-of-type {
+        height: 30rem;
+    }
+}
+
+.container:nth-of-type(2) {
+    height: 30rem;
+}
+
+.container p {
+    margin: 0 .2rem;
+}
+
+p button {
+    margin: .3rem 1rem;
+}
+
+pre {
+    padding: 1rem .8rem 1rem .8rem;
+    white-space: pre-wrap;
+    text-align: left;
+    background: rgba(167, 167, 167, 0.068);
+}
