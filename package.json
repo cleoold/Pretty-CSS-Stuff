@@ -1,6 +1,6 @@
 {
   "name": "pretty-css-stuff",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "collection of CSS button widgets",
   "scripts": {
     "less": "lessc src/button.less dist/cosbuttons-full.css",
