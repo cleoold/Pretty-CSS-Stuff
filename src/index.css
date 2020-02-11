@@ -31,19 +31,14 @@ header {
 }
 
 .container:first-of-type {
-    height: 27rem;
+    min-height: 27rem;
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,126,253,1) 50%, rgba(252,176,69,1) 100%);
     color: white;
 }
-@media (max-width:480px) {
-    .container:first-of-type {
-        height: 30rem;
-    }
-}
 
 .container:nth-of-type(2) {
-    height: 30rem;
+    min-height: 30rem;
 }
 
 .container p {
