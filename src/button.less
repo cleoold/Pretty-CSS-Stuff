@@ -1,5 +1,5 @@
 /**https://github.com/cleoold/Pretty-CSS-Stuff
-*button widgets v0.0.2
+*button widgets v0.0.3
 *licensed under MIT
 *February 2020*/
 
@@ -56,6 +56,16 @@
         .use-transform(@transform);
         @transition: transform 0s;
         .use-transition(@transition);
+    }
+
+    &:disabled {
+        cursor: default;
+        &:active::after {
+            opacity: 0;
+        }
+        &:hover {
+            background-color: unset;
+        }
     }
 }
 
@@ -117,7 +127,8 @@
     overflow: hidden;
     outline: none;
     cursor: pointer;
-    box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.158);
+    @originalshadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.158);
+    box-shadow: @originalshadow;
     transition: box-shadow .2s ease-in;
 
     &::-moz-focus-inner {
@@ -156,6 +167,7 @@
 
     &:hover {
         box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.253);
+        &:disabled { box-shadow: @originalshadow; }
     }
 
     &:hover::before {
@@ -176,6 +188,15 @@
         .use-transform(@transform);
         @transition: transform 0s;
         .use-transition(@transition);
+    }
+
+    &:disabled {
+        cursor: default;
+        @filter: contrast(65%);
+        .use-filter(@filter);
+        &:hover::before, &:focus::before, &:hover:focus:before, &:active::after {
+            opacity: 0;
+        }
     }
 }
 
